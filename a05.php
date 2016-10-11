@@ -3,37 +3,41 @@
 
 class persona{
 
-	public $nombre;
-	public $apellido;
-	public $edad;
-	public $dni;
+	public $nombre = 'Javi';
+	public $apellido = 'Montañez';
+	public $edad = 20;
+	public $dni = '21011667V';
 
 
 /////////////////FUNCTION CONTRUCT PARA AYUDAR A LA CREACIÓN DE LOS OBJETOS/////////////////
 
-function construct($nombre, $apellido, $edad, $dni){
+/*function __construct($nombre, $apellido, $edad, $dni){
 	$this->nombre = $nombre;
 	$this->apellido = $apellido;
 	$this->edad = $edad;
 	$this->dni = $dni;
 }
-
+*/
 
 /////////////////CREACION DE TODOS LOS GETERS DE LA CLASE/////////////////
 
 public function getNombre(){
+	echo $this->nombre;
 	return $this->nombre;
 }
 
 public function getApellido(){
+	echo $this->apellido;
 	return $this->apellido;
 }
 
 public function getEdad(){
+	echo $this->edad;
 	return $this->edad;
 }
 
 public function getDni(){
+	echo $this->dni;
 	return $this->dni;
 }
 
@@ -41,19 +45,19 @@ public function getDni(){
 /////////////////A CONTINUACION VAMOS A CREAR LOS SETTERS/////////////////
 
 public function setNombre($nombre){
-	$this->nombre;
+	$this->nombre = $nombre;
 }
 
 public function setApellido($apellido){
-	$this->apellido;
+	$this->apellido = $apellido;
 }
 
 public function setEdad($edad){
-	$this->edad;
+	$this->edad = $edad;
 }
 
 public function setDni($dni){
-	$this->dni;
+	$this->dni = $edad;
 }
 /*
 /////////////////A CONTINUACION CREAMOS UNA PEQUEÑA FUNCION PARA DEVOLVER LA INFORMACION/////////////////
@@ -67,4 +71,5 @@ public function generarInformacion(){
 }
 */
 }
+
 ?>
